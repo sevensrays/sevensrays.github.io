@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №2 - Меню вибору</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .menu-wrapper {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 20px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn-link {
+            display: block;
+            background-color: #3b5c8d; /* Твій фірмовий синій колір */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-link:hover {
+            background-color: #2a4366;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 25px;
+            color: #777777;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .btn-back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-wrapper">
+    <h1>Виберіть завдання ЛР №2</h1>
+    
+    <div class="buttons-container">
+        <a href="task_lemon/index.html" target="_blank" class="btn-link">Завдання «Лимон»</a>
+        <a href="task_mriya/cossacs.html" target="_blank" class="btn-link">Завдання «Мрія»</a>
+    </div>
+
+    <a href="index.html" class="btn-back">← Назад до резюме</a>
+</div>
+
+</body>
+</html>
