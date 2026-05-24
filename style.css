@@ -1,0 +1,277 @@
+/* Загальні налаштування */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* --- Горизонтальне меню --- */
+.top-menu {
+    text-align: center;
+    background-color: #3b5c8d;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+    max-width: 900px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.top-menu li {
+    display: inline-block; /* Вимога лабораторної */
+    margin: 0 20px;
+}
+
+.top-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-menu a:hover {
+    text-decoration: underline;
+}
+
+/* --- Головний контейнер --- */
+.resume-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-size: 0; /* Прибираємо пробіли між inline-block */
+}
+
+/* --- Колонки --- */
+.sidebar, .content {
+    display: inline-block; /* Вимога лабораторної */
+    vertical-align: top;
+    font-size: 14px; /* Повертаємо нормальний шрифт */
+}
+
+/* --- Ліва колонка (Синя) --- */
+.sidebar {
+    width: 32%;
+    background-color: #3b5c8d; /* Точний колір з макету */
+    color: #ffffff;
+    padding: 30px 20px;
+    min-height: 1100px;
+}
+
+.photo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.white-hr {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin-bottom: 15px;
+}
+
+.info-block {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.info-label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info-val {
+    font-size: 13px;
+    color: #e0e6ed;
+}
+
+/* Списки в лівій колонці */
+.interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.interests-list li {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.languages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.languages-list li {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.lang-name {
+    font-weight: bold;
+}
+
+.lang-level {
+    float: right; /* Вирівнювання рівня мови по правому краю */
+    color: #e0e6ed;
+}
+
+.languages-list li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Права колонка (Біла) --- */
+.content {
+    width: 68%;
+    padding: 40px 50px;
+    color: #333333;
+}
+
+.main-name {
+    font-size: 38px;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.content h2 {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.gray-hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+/* Елементи досвіду та освіти */
+.resume-item {
+    margin-bottom: 25px;
+}
+
+.item-header {
+    font-size: 0; /* Для inline-block */
+    margin-bottom: 5px;
+}
+
+.item-title {
+    display: inline-block;
+    width: 70%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.item-date {
+    display: inline-block;
+    width: 30%;
+    font-size: 13px;
+    text-align: right;
+    color: #555555;
+}
+
+.item-subtitle {
+    font-size: 13px;
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.item-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444444;
+    margin: 0;
+}
+
+.skills-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.portfolio-list {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.portfolio-list li {
+    margin-bottom: 8px;
+}
+
+.nested-edu-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nested-edu-list ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+/* Блок Entities */
+.entities-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 3px solid #3b5c8d;
+    font-size: 13px;
+}
+
+.entities-section code {
+    color: #d63384;
+    font-family: monospace;
+}
+
+/* --- Секція Портфоліо (Кнопки) --- */
+.portfolio-buttons {
+    display: block; /* або flex, якщо хочеш, щоб вони були в рядок і самостійно переносились */
+    margin-top: 15px;
+}
+
+.btn-portfolio {
+    display: inline-block;
+    background-color: #3b5c8d; /* Колір як у лівої колонки та верхнього меню */
+    color: #ffffff;
+    text-decoration: none; /* Прибираємо підкреслення посилання */
+    padding: 10px 20px;
+    margin: 0 10px 10px 0; /* Відступи між кнопками */
+    border-radius: 5px; /* Заокруглені кути */
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Плавний перехід кольору при наведенні */
+    border: 2px solid transparent;
+}
+
+.btn-portfolio:hover {
+    background-color: #2a4366; /* Темніший синій при наведенні */
+    color: #ffffff;
+    text-decoration: none; /* Гарантуємо, що підкреслення не з'явиться */
+}
+
+/* Прибираємо старий стиль для списку, оскільки ми його замінили */
+.portfolio-list {
+    display: none; 
+}
