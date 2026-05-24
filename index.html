@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <title>Untitled</title>
     <link rel="stylesheet" href="./style.css">
-
   </head>
     
   <body>
   <nav>
     <ul class="top-menu">
         <li><a href="#personal">Особисті дані</a></li>
+        <li><a href="#experience">Досвід роботи</a></li>
         <li><a href="#education">Освіта і кваліфікації</a></li>
         <li><a href="#portfolio">Портфоліо</a></li>
     </ul>
-</nav>
+  </nav>
 
 <main class="resume-wrapper">
     
     <aside class="sidebar" id="personal">
         <figure class="photo-container">
-            <img src="lab1/me.jpg" alt="Фото Фархада" class="profile-photo">
+            <img src="https://i.postimg.cc/SKQ4pGN3/IMG-20260309-225141-692.jpg" alt="Фото Фархада" class="profile-photo">
         </figure>
 
         <h2>Особисті дані</h2>
@@ -44,7 +44,37 @@
                 <div class="info-label">Email</div>
                 <div class="info-val">farhad@example.com</div>
             </div>
+            <div class="info-block">
+                <div class="info-label">Дата народження</div>
+                <div class="info-val"><time datetime="2008-05-17">17-05-2008</time></div>
+            </div>
         </address>
+
+        <br>
+        <h2>Інтереси</h2>
+        <hr class="white-hr">
+        <ul class="interests-list">
+            <li>Вивчення мов програмування</li>
+            <li>Комп'ютерне залізо (PC hardware)</li>
+        </ul>
+
+        <br>
+        <h2>Мови</h2>
+        <hr class="white-hr">
+        <ul class="languages-list">
+            <li>
+                <span class="lang-name">Англійська</span>
+                <span class="lang-level">B1</span>
+            </li>
+            <li>
+                <span class="lang-name">Французька</span>
+                <span class="lang-level">Початковий</span>
+            </li>
+            <li>
+                <span class="lang-name">Українська</span>
+                <span class="lang-level">Рідна мова</span>
+            </li>
+        </ul>
     </aside>
 
     <div class="content">
@@ -52,6 +82,20 @@
             <h1 class="main-name">Фархад Насібов</h1>
             <p class="summary">Студент-розробник, захоплююсь створенням консольних додатків відповідно до вимог технічного завдання.</p>
         </header>
+        
+        <section id="experience">
+            <h2>Досвід роботи</h2>
+            <hr class="gray-hr">
+            
+            <div class="resume-item">
+                <div class="item-header">
+                    <span class="item-title">Java-розробник (Trainee)</span>
+                    <span class="item-date"><time datetime="2025-09">вер 2025</time> - теп. час</span>
+                </div>
+                <div class="item-subtitle">ФКЕП ІФНТУНГ, Івано-Франківськ</div>
+                <p class="item-desc">Розробка алгоритмів, написання програмного забезпечення мовою Java, обробка масивів та створення консольних додатків відповідно до вимог технічного завдання.</p>
+            </div>
+        </section>
 
         <section id="education">
             <h2>Освіта і кваліфікації</h2>
@@ -110,5 +154,5 @@
     </div>
 </main>
 </body>
-  
+
 </html>
